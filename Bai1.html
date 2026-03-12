@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Quản lý Sinh viên</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h3>
+      Họ tên: <input id="txtName" /> Điểm: <input type="number" id="txtScore" />
+      <button id="btnAdd">Thêm</button>
+    </h3>
+    <hr />
+    <p>
+      Tìm kiếm: <input id="searchName" placeholder="Nhap Ho Ten..." /> Lọc:
+      <select id="filterGrade">
+        <option value="All">Tất cả</option>
+        <option value="Giỏi">Giỏi</option>
+        <option value="Khá">Khá</option>
+        <option value="Trung bình">Trung bình</option>
+        <option value="Yếu">Yếu</option>
+      </select>
+    </p>
+    <table border="1" width="100%">
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>Họ tên</th>
+          <th id="sortScore" style="cursor: pointer">Điểm</th>
+          <th>Xếp loại</th>
+          <th>Thao tác</th>
+        </tr>
+      </thead>
+      <tbody id="studentBody"></tbody>
+    </table>
+    <h4>
+      Tổng số: <span id="totalStd">0</span> | Điểm TB:
+      <span id="avgScore">0</span>
+    </h4>
+    <script src="main.js"></script>
+  </body>
+</html>

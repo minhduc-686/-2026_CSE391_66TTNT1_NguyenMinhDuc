@@ -1,68 +1,51 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
   padding: 20px;
-  background-color: #f4f4f4;
+  color: #333;
 }
-
-.tieu-de-bai-tap {
-  background-color: #add8e6;
-  padding: 10px;
-  font-weight: bold;
-  border: 1px solid #ccc;
-  margin-bottom: 20px;
-}
-
-.form-tong {
-  background-color: #fff;
-  border: 1px solid #333;
-  padding: 30px;
-  max-width: 850px;
-  margin: 0 auto;
-}
-
-.huong-dan {
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.hang-ngang {
-  display: flex;
-  gap: 20px;
+.controls {
   margin-bottom: 15px;
+  display: flex;
+  gap: 10px;
 }
-
-.hang-ngang input {
-  flex: 1;
-  padding: 10px;
+input,
+select,
+button {
+  padding: 8px;
   border: 1px solid #ccc;
+  border-radius: 4px;
 }
-
-.o-nhap-dai {
+table {
   width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+th,
+td {
+  border: 1px solid #ddd;
   padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+  text-align: left;
 }
-
-textarea {
-  height: 150px;
-  font-family: Arial;
+th {
+  background-color: #f8f9fa;
 }
-
-.hang-cuoi {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.low-score {
+  background-color: #fff9c4 !important;
 }
-.nut-gui {
-  background-color: #87ceeb;
-  border: 1px solid #666;
-  padding: 10px 20px;
-  color: white;
+.stats {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+button {
   cursor: pointer;
+  background: #e0e0e0;
 }
-.chu-thich {
-  color: #888;
-  font-size: 14px;
+#btnAdd {
+  background: #2196f3;
+  color: white;
+  border: none;
+}
+#btnAdd:hover {
+  background: #1976d2;
 }
